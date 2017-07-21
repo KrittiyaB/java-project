@@ -14,75 +14,82 @@ public class Exam01 {
 
 
     public void playerAWin() {
-    	winner = firstPerson;
     	countPlayer1++;
     }
 
     public void playerBWin() {
-    	winner = secondPerson;
     	countPlayer2++;
     }
 
     public String getScore() {
-//    	if(winner == firstPerson) {
-//    		if(countPlayer1 == 1) {
-//    			return "Fifteen-Love";
-//    		}else if(countPlayer1 == 2) {
-//    			return "Thirty-Love";
-//    		}else if(countPlayer1 == 3) {
-//    			return "Forty-Love";
-//    		}else if(countPlayer1 == 4) {
-//    			return "Win for Player A";
-//    		}
-//    	}else {
-//    		if(countPlayer2 == 1) {
-//    			return "Love-Fifteen";
-//    		}else if(countPlayer2 == 2) {
-//    			return "Love-Thirty";
-//    		}else if(countPlayer2 == 3) {
-//    			return "Love-Forty";
-//    		}else if(countPlayer2 == 4) {
-//    			return "Win for Player B";
-//    		}
-//    	}
+    	String result = "";
+    	String scoreA = "";
+    	String scireB = "";
     	
-    	if(countPlayer1 == 1 && countPlayer2 == 0) {
-			return "Fifteen-Love";
-		}else if(countPlayer1 == 2 && countPlayer2 == 0) {
-			return "Thirty-Love";
-		}else if(countPlayer1 == 3 && countPlayer2 == 0) {
-			return "Forty-Love";
-		}else if(countPlayer1 == 4 && countPlayer2 == 0) {
-			return "Win for Player A";
-		}
     	
-    	if(countPlayer2 == 1 && countPlayer1 == 0) {
-			return "Love-Fifteen";
-		}else if(countPlayer2 == 2 && countPlayer1 == 0) {
-			return "Love-Thirty";
-		}else if(countPlayer2 == 3 && countPlayer1 == 0) {
-			return "Love-Forty";
-		}else if(countPlayer2 == 4 && countPlayer1 == 0) {
-			return "Win for Player B";
-		}
     	
-    	if(countPlayer1 == countPlayer2 && countPlayer1 == 1) {
+    	
+    	if(countPlayer1 == countPlayer2 && countPlayer1 == 0) {
+    		return "Love-All";
+    	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 1) {
     		return "Fifteen-All";
     	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 2) {
     		return "Thirty-All";
-    	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 3 || countPlayer1 == 4) {
-    		return "Deuce";
+    	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 3) {
+    		return "Forty-All";
+    	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 4) {
+    		return "Duce";
     	}
+    	
     	
     	if(countPlayer1 > countPlayer2) {
-    		if(countPlayer1 - countPlayer2 == 1) {
-    			return "Thirty-Fifteen";
+    		if(countPlayer1 == 1) {
+    			scoreA = "Fifteen";
+    		}else if(countPlayer1 == 2) {
+    			scoreA = "Thirty";
+    		}else if(countPlayer1 == 3) {
+    			scoreA = "Forty";
     		}
+    		
+    		if(countPlayer2 == 1) {
+    			scireB = "ifteen";
+    		}else if(countPlayer2 == 2) {
+    			scireB = "Thirty";
+    		}else if(countPlayer2 == 3) {
+    			scireB = "Forty";
+    		}
+    		
+    		result = scoreA + "-" + scireB;
+    		return result;
+    		
+    	}else {
+    		
+    		if(countPlayer1 == 1) {
+    			scoreA = "Fifteen";
+    		}else if(countPlayer1 == 2) {
+    			scoreA = "Thirty";
+    		}else if(countPlayer1 == 3) {
+    			scoreA = "Forty";
+    		}
+    		
+    		if(countPlayer2 == 1) {
+    			scireB = "ifteen";
+    		}else if(countPlayer2 == 2) {
+    			scireB = "Thirty";
+    		}else if(countPlayer2 == 3) {
+    			scireB = "Forty";
+    		}
+    		result = scoreA + "-" + scireB;
+    		return result;
     	}
     	
     	
     	
-    	return "Love-All";
+    	
+    	
+    	//return "Love-All";
+    	
+    	
     	
     	
         
