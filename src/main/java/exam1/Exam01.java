@@ -70,7 +70,7 @@ public class Exam01 {
     		return "Fifteen-All";
     	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 2) {
     		return "Thirty-All";
-    	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 3) {
+    	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 3 || countPlayer1 == 4) {
     		return "Deuce";
     	}
     	
