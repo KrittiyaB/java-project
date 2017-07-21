@@ -46,7 +46,7 @@ public class Exam01 {
 //    		}
 //    	}
     	
-    	if(countPlayer1 == 1) {
+    	if(countPlayer1 == 1 && countPlayer2 == 0) {
 			return "Fifteen-Love";
 		}else if(countPlayer1 == 2) {
 			return "Thirty-Love";
@@ -56,7 +56,7 @@ public class Exam01 {
 			return "Win for Player A";
 		}
     	
-    	if(countPlayer2 == 1) {
+    	if(countPlayer2 == 1 && countPlayer1 == 0) {
 			return "Love-Fifteen";
 		}else if(countPlayer2 == 2) {
 			return "Love-Thirty";
@@ -67,7 +67,7 @@ public class Exam01 {
 		}
     	
     	if(countPlayer1 == countPlayer2 && countPlayer1 == 1) {
-    		return "Love-All";
+    		return "Fifteen-All";
     	}
     	return "Love-All";
         
