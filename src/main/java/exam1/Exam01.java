@@ -25,8 +25,12 @@ public class Exam01 {
     	if(winner == firstPerson) {
     		if(countPlayer1 == 1) {
     			return "Fifteen-Love";
+    		}else if(countPlayer1 == 2) {
+    			
+    			return "Thirty-Love";
+    		}else if(countPlayer1 == 3) {
+    			return "Forty-Love";
     		}
-    		return "Thirty-Love";
     	}
         return "Love-All";
     }
