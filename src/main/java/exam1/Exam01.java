@@ -39,6 +39,8 @@ public class Exam01 {
     			return "Love-Fifteen";
     		}else if(countPlayer2 == 2) {
     			return "Love-Thirty";
+    		}else if(countPlayer2 == 3) {
+    			return "Love-Forty";
     		}
     	}
         return "Love-All";
