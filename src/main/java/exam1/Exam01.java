@@ -70,7 +70,9 @@ public class Exam01 {
     			scoreA = "Thirty";
     		}else if(countPlayer1 == 3) {
     			scoreA = "Forty";
-    		}
+    		}else if (countPlayer1 == 4) {
+				scoreA = "Win for Player A";
+			}
     		
     		if(countPlayer2 == 1) {
     			scireB = "ifteen";
@@ -78,6 +80,12 @@ public class Exam01 {
     			scireB = "Thirty";
     		}else if(countPlayer2 == 3) {
     			scireB = "Forty";
+    		}else if(countPlayer2 == 4) {
+    			
+    		}
+    		
+    		if(countPlayer1 == 4) {
+    			return result;
     		}
     		result = scoreA + "-" + scireB;
     		return result;
