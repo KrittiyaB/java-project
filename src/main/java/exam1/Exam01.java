@@ -74,6 +74,12 @@ public class Exam01 {
     		return "Deuce";
     	}
     	
+    	if(countPlayer1 > countPlayer2) {
+    		if(countPlayer1 - countPlayer2 == 1) {
+    			return "Thirty-Fifteen";
+    		}
+    	}
+    	
     	
     	
     	return "Love-All";
