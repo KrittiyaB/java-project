@@ -48,26 +48,28 @@ public class Exam01 {
     	
     	if(countPlayer1 == 1 && countPlayer2 == 0) {
 			return "Fifteen-Love";
-		}else if(countPlayer1 == 2) {
+		}else if(countPlayer1 == 2 && countPlayer2 == 0) {
 			return "Thirty-Love";
-		}else if(countPlayer1 == 3) {
+		}else if(countPlayer1 == 3 && countPlayer2 == 0) {
 			return "Forty-Love";
-		}else if(countPlayer1 == 4) {
+		}else if(countPlayer1 == 4 && countPlayer2 == 0) {
 			return "Win for Player A";
 		}
     	
     	if(countPlayer2 == 1 && countPlayer1 == 0) {
 			return "Love-Fifteen";
-		}else if(countPlayer2 == 2) {
+		}else if(countPlayer2 == 2 && countPlayer1 == 0) {
 			return "Love-Thirty";
-		}else if(countPlayer2 == 3) {
+		}else if(countPlayer2 == 3 && countPlayer1 == 0) {
 			return "Love-Forty";
-		}else if(countPlayer2 == 4) {
+		}else if(countPlayer2 == 4 && countPlayer1 == 0) {
 			return "Win for Player B";
 		}
     	
     	if(countPlayer1 == countPlayer2 && countPlayer1 == 1) {
     		return "Fifteen-All";
+    	}else if(countPlayer1 == countPlayer2 && countPlayer1 == 2) {
+    		return "Thirty-All";
     	}
     	return "Love-All";
         
