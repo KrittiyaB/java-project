@@ -19,6 +19,8 @@ public class Exam01 {
     }
 
     public void playerBWin() {
+    	winner = secondPerson;
+    	countPlayer2++;
     }
 
     public String getScore() {
@@ -30,6 +32,12 @@ public class Exam01 {
     			return "Thirty-Love";
     		}else if(countPlayer1 == 3) {
     			return "Forty-Love";
+    		}else if(countPlayer1 == 4) {
+    			return "Win for Player A";
+    		}
+    	}else {
+    		if(countPlayer2 == 1) {
+    			return "Love-Fifteen";
     		}
     	}
         return "Love-All";
