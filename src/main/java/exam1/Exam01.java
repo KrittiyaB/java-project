@@ -75,7 +75,7 @@ public class Exam01 {
 			}
     		
     		if(countPlayer2 == 1) {
-    			scireB = "ifteen";
+    			scireB = "Fifteen";
     		}else if(countPlayer2 == 2) {
     			scireB = "Thirty";
     		}else if(countPlayer2 == 3) {
@@ -90,14 +90,6 @@ public class Exam01 {
     		result = scoreA + "-" + scireB;
     		return result;
     	}
-    	
-    	
-    	
-    	
-    	
-    	//return "Love-All";
-    	
-    	
     	
     	
         
