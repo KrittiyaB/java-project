@@ -44,8 +44,11 @@ public class Exam01 {
     		resultA = "Forty";
     	}
     	
-    	
-    	if(countPlayerA == countPlayerB) {
+    	if(countPlayerA == 0 && countPlayerB == 0) {
+    		resultFinal = "Love-All";
+    	}else if(countPlayerA == countPlayerB && countPlayerA >= 3 && countPlayerA <= 4 ) {
+    		resultFinal = "Deuce";	
+    	}else if(countPlayerA == countPlayerB) {
     		resultFinal = resultA + "-" + "All";
     	}
     	
