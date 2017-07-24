@@ -37,11 +37,11 @@ public class Exam01 {
     	if(countPlayerB == 0) {
     		resultB = "Love";
     	}else if(countPlayerB == 1) {
-    		resultA = "Fifteen";
+    		resultB = "Fifteen";
     	}else if(countPlayerB == 2) {
-    		resultA = "Thirty";
+    		resultB = "Thirty";
     	}else if(countPlayerB == 3) {
-    		resultA = "Forty";
+    		resultB = "Forty";
     	}
     	
     	if(countPlayerA == 0 && countPlayerB == 0) {
@@ -50,6 +50,8 @@ public class Exam01 {
     		resultFinal = "Deuce";	
     	}else if(countPlayerA == countPlayerB) {
     		resultFinal = resultA + "-" + "All";
+    	}else if(countPlayerA <= 3 && countPlayerB <= 3) {
+    		resultFinal = resultA + "-" + resultB;
     	}
     	
     	
