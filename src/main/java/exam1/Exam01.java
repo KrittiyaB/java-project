@@ -55,9 +55,9 @@ public class Exam01 {
     	}else if(countPlayerA <= 3 && countPlayerB <= 3) {
     		resultFinal = resultA + "-" + resultB;
     	}else if(countPlayerA >= 4 || countPlayerB >=4) {
-    		if(countPlayerA - countPlayerB == 2) {
+    		if(countPlayerA - countPlayerB >= 2) {
     			resultFinal = "Win for Player A";
-    		}else if(countPlayerB - countPlayerA == 2) {
+    		}else if(countPlayerB - countPlayerA >= 2) {
     			resultFinal = "Win for Player B";
     		}else if(countPlayerA - countPlayerB == 1) {
     			resultFinal = "Advantage Player A";
