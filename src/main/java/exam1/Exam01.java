@@ -24,6 +24,10 @@ public class Exam01 {
     	String resultB = "";
     	String resultFinal = "";
     	
+    	if(countPlayerA == 0 && countPlayerB == 0) {
+    		resultFinal = "Love-All";
+    	}
+    	
     	if(countPlayerA == 0) {
     		resultA = "Love";
     	}else if(countPlayerA == 1) {
@@ -44,14 +48,22 @@ public class Exam01 {
     		resultB = "Forty";
     	}
     	
-    	if(countPlayerA == 0 && countPlayerB == 0) {
-    		resultFinal = "Love-All";
-    	}else if(countPlayerA == countPlayerB && countPlayerA >= 3 && countPlayerA <= 4 ) {
+    	if(countPlayerA == countPlayerB && countPlayerA >= 3 && countPlayerA <= 4 ) {
     		resultFinal = "Deuce";	
     	}else if(countPlayerA == countPlayerB) {
     		resultFinal = resultA + "-" + "All";
     	}else if(countPlayerA <= 3 && countPlayerB <= 3) {
     		resultFinal = resultA + "-" + resultB;
+    	}else if(countPlayerA >= 4 || countPlayerB >=4) {
+    		if(countPlayerA - countPlayerB == 2) {
+    			resultFinal = "Win for Player A";
+    		}else if(countPlayerB - countPlayerA == 2) {
+    			resultFinal = "Win for Player B";
+    		}else if(countPlayerA - countPlayerB == 1) {
+    			resultFinal = "Advantage Player A";
+    		}else if(countPlayerB - countPlayerA == 1) {
+    			resultFinal = "Advantage Player B";
+    		}
     	}
     	
     	
